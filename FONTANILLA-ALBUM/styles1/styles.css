@@ -1,0 +1,286 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    margin-bottom: 50px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #d4e2f7;
+}
+
+.navbar h1{
+    color:white
+}
+
+/* Main Content Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Page Title */
+h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #357abd;
+    transform: translateY(-3px);
+}
+
+/* Album List Styling */
+.albumList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.albumContainer {
+    width: 20%;
+    min-width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.albumContainer h3 {
+    font-size: 20px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.albumContainer p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.albumContainer form {
+    margin-top: 10px;
+}
+
+.albumContainer button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.albumContainer button:hover {
+    transform: translateY(-3px);
+}
+
+/* View Album Button */
+.albumContainer button[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.albumContainer button[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+/* Delete Button */
+.albumContainer button[name="delete_album"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.albumContainer button[name="delete_album"]:hover {
+    background-color: #c0392b;
+}
+
+/* Specific container for login and register */
+.login-container, .register-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Success and Error Messages */
+.success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Page title */
+h1 {
+    font-size: 32px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"]
+ {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #357abd;
+    transform: translateY(-3px);
+}
+
+/* Links Styling */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #357abd;
+    text-decoration: underline;
+}
+
+.container form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.view{
+    text-align: justify;
+}
+
+.deleteForm{
+    border-style: solid; 
+    border-color: red; 
+    background-color: #ffcbd1; 
+    padding: 10px; 
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.deleteForm h2{
+    color: red;
+}
+
+/* Delete Button Styling */
+.deleteForm form input[type="submit"]{
+    background-color: #e74c3c;  
+}
